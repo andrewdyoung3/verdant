@@ -1,0 +1,1 @@
+import{bL as n,bM as y,f}from"./index-Bgu2Xtua.js";function i(e,t=new Date){const a=n(e),r=y(t,a);return r===0?"today":r===1?"yesterday":r===-1?"tomorrow":r>1&&r<14?`${r} days ago`:r<-1&&r>-14?`in ${-r} days`:f(a,a.getFullYear()===t.getFullYear()?"d MMM":"d MMM yyyy")}function s(e){return f(n(e),"EEE d MMM yyyy")}export{s as f,i as r};

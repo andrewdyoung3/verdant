@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6f7f2" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#161a16" media="(prefers-color-scheme: dark)" />
+    <meta name="description" content="Verdant — a calm houseplant care tracker." />
+    <link rel="icon" type="image/svg+xml" href="/verdant/leaf.svg" />
+    <link rel="apple-touch-icon" href="/verdant/pwa-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts load without blocking first paint; the fallback stack renders until they arrive. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    </noscript>
+    <title>Verdant</title>
+    <script>
+      // Apply stored theme before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem('verdant-theme');
+        var dark = t === 'dark' || (t !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) document.documentElement.classList.add('dark');
+      } catch (e) {}
+    </script>
+    <script type="module" crossorigin src="/verdant/assets/index-Bgu2Xtua.js"></script>
+    <link rel="stylesheet" crossorigin href="/verdant/assets/index-_j8pRHFH.css">
+  <link rel="manifest" href="/verdant/manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
